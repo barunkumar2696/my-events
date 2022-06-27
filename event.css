@@ -1,0 +1,40 @@
+section{
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+    height: 600px;
+    width: 40%;
+}
+#right{
+    height: 600px;
+    width: 60%;
+}
+#img{
+    margin-left: 20px;
+    width:530px;
+    height:600px;
+}
+.shift{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.def{
+    display: none;
+}
+img .border{
+    border: none;
+}
+@media screen and (max-width:400px) {
+    section{
+        display: grid;
+        grid-template-columns: repeat(1,380px);
+    }
+    .shift{
+        position: absolute;
+    }
+}
+
